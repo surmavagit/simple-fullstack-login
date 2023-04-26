@@ -1,0 +1,13 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+
+type: "application"
+language: "typescript"
+
+project:
+  name: 'simple back-end server'
+  description: 'creating backend login server and connecting to the front-end'
+  maintainers: ['@denigogov', 'surmavagit']
+  
+tasks:
+  dev:
+    command: "node dist/index.js"

@@ -44,9 +44,9 @@ fileGroups:
 # and the value is an object of task parameters.
 tasks:
   # Name of the task.
-  noop:
+  hello:
     # The name of the binary/command on your system.
-    command: 'noop'
+    command: "node -e \"console.log('hello moon')\""
 
     # List of arguments to pass on the command line when executing the task.
     args: []
