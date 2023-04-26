@@ -9,5 +9,9 @@ project:
   maintainers: ['@denigogov', 'surmavagit']
   
 tasks:
+  dev-tsc:
+    command: "tsc --watch"
+  dev-nodemon:
+    command: "nodemon ./dist/index.js"
   dev:
-    command: "node dist/index.js"
+    command: "moon run server:dev-tsc server:dev-nodemon"
