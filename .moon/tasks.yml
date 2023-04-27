@@ -71,3 +71,12 @@ tasks:
     # The platform to run the command on, and where to locate it.
     # Accepts "node" or "system". Defaults based on project `language`.
     platform: 'node'
+
+  format:
+    command: 'rome format ./src'
+  lint:
+    command: 'rome check ./src'
+  fix:
+    command: 'rome check --apply ./src'
+  fix-unsafe:
+    command: 'rome check --apply-unsafe ./src'

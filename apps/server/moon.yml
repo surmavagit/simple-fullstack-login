@@ -15,3 +15,11 @@ tasks:
     command: "nodemon ./dist/index.js"
   dev:
     command: "moon run server:dev-tsc server:dev-nodemon"
+  dev-alt:
+    command: "noop"
+    deps:
+      - "~:dev-tsc"
+      - "~:dev-nodemon"
+    options:
+      outputStyle: 'stream'
+      mergeOutputs: 'append'
